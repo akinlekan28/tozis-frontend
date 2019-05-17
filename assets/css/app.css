@@ -142,6 +142,9 @@ h5 {
   color: #10ab11;
   font-weight: 600;
 }
+.class-button{
+  margin-top: 25px !important;
+}
 @media (min-width: 480px) {
   .container {
     width: 450px;
@@ -269,6 +272,7 @@ section {
 }
 .center-block {
   float: none;
+  opacity: 0.9;
 }
 .icon-bar:before {
   content: "";
@@ -848,7 +852,7 @@ a.link:hover {
   color: #2196f3;
 }
 .loginPanel .form-group {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   float: left;
 }
 .loginPanel .form-group label {
@@ -1587,6 +1591,12 @@ a.link:hover {
   margin-top: 15px;
   line-height: 30px;
 }
+.loginSection{
+  background-image: url("/assets/img/blade.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 .panel.loginPanel {
   border: 0;
 }
@@ -1622,7 +1632,7 @@ a.link:hover {
 }
 .panel.loginPanel .panel-footer p {
   margin: 0;
-  line-height: 60px;
+  line-height: 10px;
   font-size: 15px;
 }
 .loginSection .col-md-5.col-sm-6.col-xs-12 {
@@ -1635,8 +1645,8 @@ a.link:hover {
 }
 .loginSection .form-group button.btn-primary {
   border: 1px solid #e5e5e5;
-  background-color: transparent;
-  color: #222;
+  background-color: #12bf13;
+  color: #ffffff;
   width: 115px;
   padding: 17px 0;
 }
@@ -6260,12 +6270,12 @@ figure:hover .overlay {
 .listing__form .btn-submit {
   background-color: #2196f3;
   color: #fff;
-  font-size: 20px;
+  font-size: 16px;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 600;
   border: 0;
-  height: 64px;
-  width: 80%;
+  height: 50px;
+  width: 30% !important;
   letter-spacing: 5px;
   border-radius: 2px;
   transition: opacity 0.2s ease;

@@ -1,0 +1,19 @@
+.navbar-dashboard-area {
+    background-color: #12bf13;
+    padding: 10px 0;
+}
+
+.navbar-default {
+    background-color: #12bf13;
+    color: #ffffff;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+.navbar-default.navbar-dashboard .navbar-nav > li > a {
+    padding: 0 15px;
+    font-size: 13px;
+    line-height: 40px;
+    color: #ffffff;
+}

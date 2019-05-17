@@ -249,3 +249,8 @@ a.link:hover,
 .cluster div {
   background-color: #12bf13;
 }
+.nav>li>a:hover {
+  text-decoration: none;
+  background-color: transparent;
+  color: #12bf13;
+}

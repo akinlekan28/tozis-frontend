@@ -1,0 +1,12 @@
+.searchSelectbox .sbSelector:link, .searchSelectbox .sbSelector:visited, .searchSelectbox .sbSelector:hover {
+    color: #848484 !important;
+    text-transform: capitalize;
+    border: 1px solid #12bf13;
+}
+.listing-margin{
+    margin-top: 25px;
+}
+
+section {
+    padding: 30px 0;
+}
