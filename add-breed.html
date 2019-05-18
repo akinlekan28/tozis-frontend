@@ -8,7 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tozis Int. | Add Admin</title>
+  <title>Tozis Int. | Add animal breed</title>
 
 <!-- PLUGINS CSS STYLE -->
 <link href="assets/plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet">
@@ -99,10 +99,10 @@
         <div class="container">
           <div class="row">
             <div class="col-xs-12">
-              <h2>Add Admin</h2>
+              <h2>Add Breed</h2>
               <ol class="breadcrumb">
                 <li><a href="dashboard.html">Dashboard</a></li>
-                <li class="active">Add Admin</li>
+                <li class="active">Add Breed</li>
               </ol>
             </div>
           </div>
@@ -113,29 +113,29 @@
     <section class="clearfix bg-dark listingSection" id="listing-add-edit">
         <div class="container">
             <div class="row ">
-                <div class="col-xs-6 col-xs-offset-3">
+                <div class="col-xs-6 col-xs-offset-3 form-root">
                     <form action="#" method="" class="listing__form">
                         <div class="dashboardBoxBg mb30">
                             <div class="profileIntro paraMargin">
                                 <p class="text-danger">All fields are required.</p>
-                                <div class="row">
+                                <div class="row test">
                                     <div class="form-group col-xs-12">
-                                        <label for="username">Username</label>
-                                        <input type="text" class="form-control" id="username" name="username">   
+                                        <label for="animal">Animal</label>
+                                            <div class="contactSelect">
+                                                <select name="animal" id="guiest_id9" class="select-drop">
+                                                    <option value="1">Goat</option>
+                                                    <option value="2">Cow</option>
+                                                    <option value="3">Rabbit</option>
+                                                </select>
+                                            </div>
                                     </div>
                                     <div class="form-group col-xs-12">
-                                        <label for="username">Password</label>
-                                        <input type="password" class="form-control" id="password" name="password">
+                                        <label for="breed">Breed</label>
+                                        <input type="text" class="form-control" id="breed" name="breed">   
                                     </div>
+                                    <div class="more-field"></div>
                                     <div class="form-group col-xs-12">
-                                        <label for="role">Admin Role</label>
-                                        <div class="contactSelect">
-                                            <select name="role" id="guiest_id9" class="select-drop">
-                                                <option value="1">Staff</option>
-                                                <option value="2">Admin</option>
-                                                <option value="3">Super Admin</option>
-                                            </select>
-                                        </div>
+                                        <button type="button" class="btn btn-primary btn-md" id="add-more">Add More</button>
                                     </div>
                                     <div class="form-group text-center">
                                         <button type="submit" class="btn-submit">Submit</button>
@@ -157,3 +157,36 @@
   <script src="assets/plugins/selectbox/jquery.selectbox-0.1.3.min.js"></script>
   <script src="assets/plugins/owl-carousel/owl.carousel.min.js"></script>
 <script src="assets/js/app.js"></script>
+
+<script>
+    let form = document.querySelector('.more-field');
+    let addBtn = document.querySelector('#add-more');
+    let maxField = 10;
+    const extraField = '<div class="form-group col-xs-12"><label for="breed">Breed</label><input type="text" class="form-control" id="breed" name="breed"><span class="text-danger removeBtn">X</span></div>';
+    let increment = 1;
+    addBtn.addEventListener('click', e => {
+        if(increment < maxField){
+            increment++;
+            $(form).append(extraField);
+        } else {
+            const container = document.querySelector('.form-root');
+            const form = document.querySelector('.listing__form');
+            const errorDiv = document.createElement('div');
+
+            errorDiv.className = 'alert text-danger';     
+            errorDiv.appendChild(document.createTextNode("Maximum number of fields reached"));
+            container.insertBefore(errorDiv, form);
+
+            setTimeout(() => {
+            document.querySelector('.alert').remove();
+            }, 5000);
+        }
+    })
+
+    document.querySelector('.test').addEventListener('click', e => {
+        if(e.target.classList.contains('removeBtn')){
+            e.target.parentElement.remove();
+            increment--;
+        }
+    })
+</script>

@@ -437,14 +437,14 @@ section {
 .btn-secondary > i {
   margin-right: 10px;
 }
-.btn-secondary:hover {
+/* .btn-secondary:hover {
   background-color: #2196f3;
 }
 .btn-secondary:focus,
 .btn-secondary.active,
 .btn-secondary:active {
   background-color: #2196f3;
-}
+} */
 .btn-border {
   border: 2px solid #fff;
   padding: 10px 0;
