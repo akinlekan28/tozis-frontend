@@ -124,6 +124,20 @@ h5 {
 .sold-out {
   background-color: #d90f45;
 }
+.img-preview {
+  height: 250px;
+  border: 2px dotted #12bf13;
+}
+.img-preview-modal {
+  height: 200px;
+  border: 2px dotted #12bf13;
+}
+.teee{
+  margin-top: 10px;
+}
+.teee a{
+  color: #ffffff;
+}
 .card:hover {
   transform: translateY(5px);
   box-shadow: rgba(0, 0, 0, 0.09) -3px -3px 6px -3px,
