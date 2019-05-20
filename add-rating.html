@@ -8,7 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tozis Int. | Add product </title>
+  <title>Tozis Int. | Add rating</title>
 
 <!-- PLUGINS CSS STYLE -->
 <link href="assets/plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet">
@@ -112,10 +112,10 @@
         <div class="container">
           <div class="row">
             <div class="col-xs-12">
-              <h2>Add Product</h2>
+              <h2>Add rating</h2>
               <ol class="breadcrumb">
                 <li><a href="dashboard.html">Dashboard</a></li>
-                <li class="active">Add Product</li>
+                <li class="active">Add rating</li>
               </ol>
             </div>
           </div>
@@ -124,88 +124,50 @@
     </div>
 
     <section class="clearfix bg-dark listingSection" id="listing-add-edit">
-        <div class="container">
-            <div class="row ">
-                <div class="col-xs-6 col-xs-offset-3">
-                    <form action="#" method="" class="listing__form">
-                        <div class="dashboardBoxBg mb30">
-                            <div class="profileIntro paraMargin">
-                                <p class="text-danger">All fields are required.</p>
-                                <div class="row">
-                                    <div class="form-group col-xs-12">
-                                      <label for="title">Title</label>
-                                      <input type="text" class="form-control" id="title" name="title">
-                                    </div>
-                                    <div class="form-group col-xs-12">
-                                      <label for="description" class="control-label">Description</label>
-                                      <textarea class="form-control" rows="3" id="description" name="description"></textarea>
-                                    </div>
-                                    <div class="form-group col-xs-12">
-                                        <label for="animal">Animal</label>
-                                        <div class="contactSelect">
-                                            <select name="animal" id="guiest_id9" class="select-drop">
-                                                <option value="1">Goat</option>
-                                                <option value="2">Cow</option>
-                                                <option value="3">Rabbit</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="form-group col-xs-12">
-                                        <label for="breed">Breed</label>
-                                        <div class="contactSelect">
-                                            <select name="breed" id="guiest_id9" class="select-drop">
-                                                <option value="1">White Bororo</option>
-                                                <option value="2">Kalahari</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="form-group col-xs-12">
-                                        <label for="stage">Group Stage</label>
-                                        <div class="contactSelect">
-                                            <select name="stage" id="guiest_id9" class="select-drop">
-                                                <option value="1">Weaner</option>
-                                                <option value="2">Broiler</option>
-                                                <option value="3">Grower</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="form-group col-xs-12">
-                                        <label for="quantity">Quantity</label>
-                                        <input type="number" class="form-control" id="quantity" name="quantity">   
-                                    </div>
-                                    <div class="form-group col-xs-12">
-                                        <label for="minimumPrice">Minimum Price</label>
-                                        <input type="text" class="form-control" id="minimumPrice" name="minimumPrice"> 
-                                        <span class="text-danger">For total quantity supplied above</span>  
-                                    </div>
-                                    <div class="form-group col-xs-12">
-                                        <label for="maximumPrice">Maximum Price</label>
-                                        <input type="text" class="form-control" id="maximumPrice" name="maximumPrice"> 
-                                        <span class="text-danger">For total quantity supplied above</span>  
-                                    </div>
-                                    <div class="form-group col-xs-12">
-                                        <label for="priceKg">Price per Kg</label>
-                                        <input type="text" class="form-control" id="priceKg" name="priceKg"> 
-                                    </div>
+            <div class="container">
+                <div class="row ">
+                    <div class="col-xs-6 col-xs-offset-3">
+                        <form action="#" method="" class="listing__form">
+                            <div class="dashboardBoxBg mb30">
+                                <div class="profileIntro paraMargin">
+                                    <p class="text-danger">All fields are required.</p>
+                                    <div class="row">
                                         <div class="form-group col-xs-12">
-                                            <label for="image">Image</label>
-                                            <input type="file" class="form-control" id="image" name="image">
+                                            <label for="order">Select Order</label>
+                                            <div class="contactSelect">
+                                                <select name="order" id="guiest_id9" class="select-drop">
+                                                    <option value="1">Order 1</option>
+                                                    <option value="2">Order 2</option>
+                                                    <option value="3">Order 3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group col-xs-12">
+                                            Rating&nbsp;<i class="fa fa-star fa-2x pull-right"></i>&nbsp;<i class="fa fa-star fa-2x pull-right"></i>&nbsp;<i class="fa fa-star fa-2x pull-right"></i>&nbsp;<i class="fa fa-star fa-2x pull-right"></i>&nbsp;<i class="fa fa-star fa-2x pull-right"></i>
+                                        </div>
+
+                                        <div class="form-group col-xs-12">
+                                            <label for="summary">Review Summary</label>
+                                            <input type="text" class="form-control" id="summary" name="summary">
+                                            <span class="text-danger">Max of 40 characters</span>  
                                         </div>
                                         <div class="form-group col-xs-12">
-                                            <p><small class="text-success">Image preview</small></p>
-                                            <div class="img-preview"></div>
+                                            <label for="comment" class="control-label">Comment</label>
+                                            <textarea class="form-control" rows="3" id="comment" name="comment"></textarea>
+                                            <span class="text-danger">Max of 100 characters</span>  
                                         </div>
-                                        <div class="form-group text-center">
-                                            <button type="submit" class="btn btn-submit">Submit</button>
+                                            <div class="form-group text-center">
+                                                <button type="submit" class="btn-submit">Submit</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </form>
+                            </form>
+                        </div>
                     </div>
                 </div>
-            </div>
-    </section>
+        </section>
 </body>
 
 <script src="assets/plugins/jquery/jquery.min.js"></script>
@@ -215,3 +177,8 @@
   <script src="assets/plugins/selectbox/jquery.selectbox-0.1.3.min.js"></script>
   <script src="assets/plugins/owl-carousel/owl.carousel.min.js"></script>
 <script src="assets/js/app.js"></script>
+<script>
+    document.querySelector('.fa-star').addEventListener('click', e => {
+        e.target.style.color = "Gold";
+    })
+</script>

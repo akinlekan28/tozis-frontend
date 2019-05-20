@@ -1611,6 +1611,12 @@ a.link:hover {
   background-position: center;
   background-size: cover;
 }
+.loginSection1{
+  background-image: url("/assets/img/animal.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 .panel.loginPanel {
   border: 0;
 }
@@ -3166,7 +3172,7 @@ a.link:hover {
   .dropdown-menu
   li
   > a:hover {
-  color: #2196f3;
+  color: #12bf13;
   padding-left: 30px;
   background-color: #fff;
 }
