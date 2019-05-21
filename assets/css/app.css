@@ -6330,7 +6330,7 @@ figure:hover .overlay {
 }
 @media (min-width: 768px) {
   .listing__form .btn-submit {
-    width: 470px;
+    width: 40%;
   }
 }
 .listing__form .btn-submit:hover {
