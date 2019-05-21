@@ -3176,6 +3176,26 @@ a.link:hover {
   padding-left: 30px;
   background-color: #fff;
 }
+
+.btn-remove{
+  color: #12bf13;
+  background-color: #ffffff;
+  border: 1px solid #12bf13;
+  height: 10px;
+  width: 5% !important;
+  padding-bottom: 20px !important;
+  padding-top: 8px !important;
+}
+
+.btn-remove:hover{
+  color: #12bf13;
+  background-color: #ffffff;
+  border: 1px solid #12bf13;
+  height: 10px;
+  width: 5% !important;
+  padding-bottom: 20px !important;
+  padding-top: 8px !important;
+}
 @media (min-width: 768px) {
   .navbar-default.navbar-dashboard .navbar-nav > li:first-child a {
     padding-left: 10px;
@@ -3412,6 +3432,14 @@ footer {
 @media (min-width: 320px) {
   .useLink {
     margin-bottom: 25px;
+  }
+}
+@media (max-width: 425px){
+  .col-xs-offset-3 {
+      margin-left: 0;
+  }
+  .col-xs-6 {
+      width: 100%;
   }
 }
 .useLink ul li {
@@ -6295,7 +6323,7 @@ figure:hover .overlay {
   font-weight: 600;
   border: 0;
   height: 50px;
-  width: 30% !important;
+  /* width: 30% !important; */
   letter-spacing: 5px;
   border-radius: 2px;
   transition: opacity 0.2s ease;

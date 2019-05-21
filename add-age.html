@@ -175,7 +175,7 @@
     let form = document.querySelector('.more-field');
     let addBtn = document.querySelector('#add-more');
     let maxField = 10;
-    const extraField = '<div class="form-group col-xs-12"><label for="age">Age</label><input type="text" class="form-control" id="age" name="age"><span class="text-danger removeBtn">X</span></div>';
+    const extraField = '<div class="form-group col-xs-12"><label for="age">Age</label><input type="text" class="form-control" id="age" name="age"><button type="button" class="text-danger removeBtn btn btn-remove">X</button></div>';
     let increment = 1;
     addBtn.addEventListener('click', e => {
         if(increment < maxField){
