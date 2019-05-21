@@ -159,6 +159,10 @@ h5 {
 .class-button{
   margin-top: 25px !important;
 }
+.current-photo img{
+  height: 90px;
+  width: 100px;
+}
 @media (min-width: 480px) {
   .container {
     width: 450px;
