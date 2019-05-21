@@ -3441,6 +3441,15 @@ footer {
   .col-xs-6 {
       width: 100%;
   }
+  .navbar-default.navbar-dashboard
+ .navbar-nav
+ > li.dropdown
+ .dropdown-menu
+ li
+ > a {
+    color: #ffffff;
+    padding: 10px 25px;
+}
 }
 .useLink ul li {
   margin: 0 0 10px;
