@@ -159,6 +159,9 @@ h5 {
 .class-button{
   margin-top: 25px !important;
 }
+.delete-btn{
+  background-color: rgb(248, 32, 32) !important;
+}
 .current-photo img{
   height: 90px;
   width: 100px;
