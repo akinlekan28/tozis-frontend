@@ -166,6 +166,29 @@ h5 {
   height: 90px;
   width: 100px;
 }
+.slide-img{
+  width: 100%;
+}
+.base-color{
+  color: #12bf13;
+}
+.fa-shield{
+  color: gold;
+}
+.quote-btn{
+  margin-top: 70px;
+}
+.product-text{
+  font-size: 18px;
+}
+.product-details {
+  margin-top: 50px;
+}
+.btn-outline{
+  background-color: transparent !important;
+  color: #12bf13 !important;
+  border: 1px solid #12bf13 !important;
+}
 @media (min-width: 480px) {
   .container {
     width: 450px;
@@ -435,6 +458,7 @@ section {
 .btn-primary {
   background-color: #2196f3;
   transition: all 0.3s ease-in-out;
+  width: 50%;
 }
 .btn-primary > i {
   margin-right: 10px;
