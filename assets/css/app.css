@@ -189,6 +189,9 @@ h5 {
   color: #12bf13 !important;
   border: 1px solid #12bf13 !important;
 }
+.product-mb{
+  margin-bottom: 25px;
+}
 @media (min-width: 480px) {
   .container {
     width: 450px;
@@ -198,6 +201,9 @@ h5 {
 @media (max-width: 768px) {
   .large-screen {
     margin-top: 0px;
+  }
+  .product-mb {
+    margin-bottom: 70px;
   }
 }
 
@@ -3471,6 +3477,9 @@ footer {
   }
   .col-xs-6 {
       width: 100%;
+  }
+  .product-mb-overide{
+    margin-top: 30px !important;
   }
   .navbar-default.navbar-dashboard
  .navbar-nav
@@ -8699,4 +8708,51 @@ body.rtl .page-error-section .addon-form-style .form-group .btn-default {
   50% {
     box-shadow: 0 0 0 9px rgba(0, 0, 0, 0.1);
   }
+}
+
+.mySlides {display: none;}
+        
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 1s ease;
+}
+
+.active1 {
+  background-color: #12bf13
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: ease;
+  -webkit-animation-duration: 1.5s;
+  animation-name: ease;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes ease {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes ease {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
 }
