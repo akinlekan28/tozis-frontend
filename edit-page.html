@@ -8,7 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tozis Int. | Dashboard</title>
+  <title>Tozis Int. | Edit Page</title>
 
 <!-- PLUGINS CSS STYLE -->
 <link href="assets/plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet">
@@ -18,9 +18,8 @@
 <link href="assets/plugins/owl-carousel/owl.carousel.min.css" rel="stylesheet">
 <link href="assets/plugins/selectbox/select_option1.css" rel="stylesheet">
 <link href="assets/plugins/animate/animate.css" rel="stylesheet">
-<link href="#" rel="stylesheet" id="bootstrap-rtl">
-
-
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+    
   <!-- GOOGLE FONT -->
   <link href="https://fonts.googleapis.com/css?family=Muli:200,300,400,600,700,800,900" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
@@ -33,7 +32,7 @@
   <link rel="stylesheet" href="assets/css/default.css" id="option_color">
 
   <!-- FAVICON -->
-  <link href="assets/img/favico.jpg" rel="shortcut icon">    
+  <link href="assets/img/favico.jpg" rel="shortcut icon">   
 </head>
 
 <body id="body" class="body-wrapper boxed-menu" >
@@ -120,70 +119,56 @@
         </nav>
       </section>
       
-      <!-- Dashboard breadcrumb section -->
-      <div class="section dashboard-breadcrumb-section bg-dark">
+    <!-- Dashboard breadcrumb section -->
+    <div class="section dashboard-breadcrumb-section bg-dark">
         <div class="container">
           <div class="row">
             <div class="col-xs-12">
-              <h2>Dashboard</h2>
+              <h2>View/Edit Page</h2>
               <ol class="breadcrumb">
-                <li><a href="index-2.html">Home</a></li>
-                <li class="active">Dashboard</li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li class="active">View/Edit Page</li>
               </ol>
             </div>
           </div>
         </div>
+        <br>
       </div>
     </div>
 
-    <section class="clearfix bg-dark equalHeight dashboardSection">
-        <div class="container">
+    <div class="col-xs-12">
+      <div class="table-responsive bgAdd">
+        <table id="ordersTable" class="table table-small-font table-bordered table-striped" cellspacing="0" width="100%">
+          <thead>
+            <tr>
+              <th>#SN</th>
+              <th>Title</th>
+              <th>Meta keywords</th>
+              <th>Meta Descriptions</th>
+              <th>Date Added</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2475</td>
+              <td>Sample Post</td>
+              <td>Hello world</td>
+              <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, iure?</td>
+              <td>12/12/2017</td>
+              <td>
+                <div class="btn-group">
+                  <a href="/create-page.html" class="btn btn-primary">Edit</a>
+                  <button type="button" class="btn btn-primary"><i class="fa fa-trash text-danger"></i></button>
+                </div>
+              </td>
+            </tr>
 
-            <div class="row">
-              <div class="col-sm-3 col-xs-12">
-                  <div class="panel panel-default panel-card">
-                    <div class="panel-heading">
-                      Farms
-                    </div>
-                    <div class="panel-body">
-                      <h2>92</h2>
-                    </div>
-                  </div>
-            </div>
-            <div class="col-sm-3 col-xs-12">
-              <div class="panel panel-default panel-card">
-                <div class="panel-heading">
-                  Listings
-                </div>
-                <div class="panel-body">
-                  <h2>71,503</h2>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3 col-xs-12">
-              <div class="panel panel-default panel-card">
-                <div class="panel-heading">
-                  Animals
-                </div>
-                <div class="panel-body">
-                  <h2>5,00,103</h2>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3 col-xs-12">
-              <div class="panel panel-default panel-card">
-                <div class="panel-heading">
-                  Animal Breeds
-                </div>
-                <div class="panel-body">
-                  <h2>31,200</h2>
-                </div>
-              </div>
-            </div>
-          </div>
+          </tbody>
+        </table>
+      </div>
+    </div>
 
-        </div>
-      </section>
 </body>
 
 <script src="assets/plugins/jquery/jquery.min.js"></script>
@@ -192,4 +177,11 @@
   <script src="assets/plugins/smoothscroll/SmoothScroll.min.js"></script>
   <script src="assets/plugins/selectbox/jquery.selectbox-0.1.3.min.js"></script>
   <script src="assets/plugins/owl-carousel/owl.carousel.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
 <script src="assets/js/app.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $('#ordersTable').DataTable();
+    });
+</script>

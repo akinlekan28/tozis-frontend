@@ -8,7 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tozis Int. | Dashboard</title>
+  <title>Tozis Int. | Create Page</title>
 
 <!-- PLUGINS CSS STYLE -->
 <link href="assets/plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet">
@@ -18,7 +18,9 @@
 <link href="assets/plugins/owl-carousel/owl.carousel.min.css" rel="stylesheet">
 <link href="assets/plugins/selectbox/select_option1.css" rel="stylesheet">
 <link href="assets/plugins/animate/animate.css" rel="stylesheet">
-<link href="#" rel="stylesheet" id="bootstrap-rtl">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote-lite.css" rel="stylesheet">
+    
 
 
   <!-- GOOGLE FONT -->
@@ -33,7 +35,15 @@
   <link rel="stylesheet" href="assets/css/default.css" id="option_color">
 
   <!-- FAVICON -->
-  <link href="assets/img/favico.jpg" rel="shortcut icon">    
+  <link href="assets/img/favico.jpg" rel="shortcut icon">   
+  <style>
+      @media (min-width: 768px){
+        .form-group button {
+            width: 50px;
+            padding: 18px 0;
+        }
+      }
+  </style> 
 </head>
 
 <body id="body" class="body-wrapper boxed-menu" >
@@ -106,7 +116,6 @@
                     <li><a href="view-rating.html">View rating</a></li>
                     <li><a href="create-page.html">Create Page</a></li>
                     <li><a href="edit-page.html">Edit Page</a></li>
-                    <li><a href="website-log.html">Logs</a></li>
                   </ul>
                 </li>
               </ul>
@@ -120,15 +129,15 @@
         </nav>
       </section>
       
-      <!-- Dashboard breadcrumb section -->
-      <div class="section dashboard-breadcrumb-section bg-dark">
+    <!-- Dashboard breadcrumb section -->
+    <div class="section dashboard-breadcrumb-section bg-dark">
         <div class="container">
           <div class="row">
             <div class="col-xs-12">
-              <h2>Dashboard</h2>
+              <h2>Create Page</h2>
               <ol class="breadcrumb">
-                <li><a href="index-2.html">Home</a></li>
-                <li class="active">Dashboard</li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li class="active">Create Page</li>
               </ol>
             </div>
           </div>
@@ -136,54 +145,43 @@
       </div>
     </div>
 
-    <section class="clearfix bg-dark equalHeight dashboardSection">
-        <div class="container">
-
-            <div class="row">
-              <div class="col-sm-3 col-xs-12">
-                  <div class="panel panel-default panel-card">
-                    <div class="panel-heading">
-                      Farms
+    <section class="clearfix bg-dark listingSection" id="listing-add-edit">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-md-12">
+                        <form action="#" method="" class="listing__form">
+                            <div class="dashboardBoxBg mb30">
+                                <div class="profileIntro paraMargin">
+                                    <p class="text-danger">All fields are required.</p>
+                                    <div class="row">
+                                        <div class="form-group">
+                                          <label for="title">Title</label>
+                                          <input type="text" class="form-control" id="title" name="title">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="metaKey">Meta Keywords</label>
+                                            <input type="text" class="form-control" id="metaKey" name="metaKey">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="metaDesc">Meta Description</label>
+                                            <input type="text" class="form-control" id="metaDesc" name="metaDesc">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="content">Page Content</label>
+                                            <textarea id="summernote" name="content"></textarea>
+                                        </div>
+                                        <div class="form-group text-center">
+                                            <button type="submit" class="btn btn-submit">Submit</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
                     </div>
-                    <div class="panel-body">
-                      <h2>92</h2>
-                    </div>
-                  </div>
+                </div>
             </div>
-            <div class="col-sm-3 col-xs-12">
-              <div class="panel panel-default panel-card">
-                <div class="panel-heading">
-                  Listings
-                </div>
-                <div class="panel-body">
-                  <h2>71,503</h2>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3 col-xs-12">
-              <div class="panel panel-default panel-card">
-                <div class="panel-heading">
-                  Animals
-                </div>
-                <div class="panel-body">
-                  <h2>5,00,103</h2>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3 col-xs-12">
-              <div class="panel panel-default panel-card">
-                <div class="panel-heading">
-                  Animal Breeds
-                </div>
-                <div class="panel-body">
-                  <h2>31,200</h2>
-                </div>
-              </div>
-            </div>
-          </div>
+    </section>
 
-        </div>
-      </section>
 </body>
 
 <script src="assets/plugins/jquery/jquery.min.js"></script>
@@ -193,3 +191,11 @@
   <script src="assets/plugins/selectbox/jquery.selectbox-0.1.3.min.js"></script>
   <script src="assets/plugins/owl-carousel/owl.carousel.min.js"></script>
 <script src="assets/js/app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote-lite.js"></script>
+
+<script>
+    $('#summernote').summernote({
+        tabsize: 1,
+        height: 300
+      });
+</script>
