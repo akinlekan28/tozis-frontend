@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- SITE TITTLE -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tozis Int. | Dashboard</title>
+
+<!-- PLUGINS CSS STYLE -->
+<link href="assets/plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet">
+<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<link href="assets/plugins/bootstrapthumbnail/bootstrap-thumbnail.css" rel="stylesheet">
+<link href="assets/plugins/owl-carousel/owl.carousel.min.css" rel="stylesheet">
+<link href="assets/plugins/selectbox/select_option1.css" rel="stylesheet">
+<link href="assets/plugins/animate/animate.css" rel="stylesheet">
+<link href="#" rel="stylesheet" id="bootstrap-rtl">
+
+
+  <!-- GOOGLE FONT -->
+  <link href="https://fonts.googleapis.com/css?family=Muli:200,300,400,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff" rel="stylesheet">
+
+  <!-- CUSTOM CSS -->
+  <link href="assets/css/app.css" rel="stylesheet">
+  <link href="assets/css/dashboard.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/default.css" id="option_color">
+
+  <!-- FAVICON -->
+  <link href="assets/img/favico.jpg" rel="shortcut icon">    
+</head>
+
+<body id="body" class="body-wrapper boxed-menu" >
+    <div class="main-wrapper">
+            <!-- Dashboard header -->
+    <section class="navbar-dashboard-area">
+      <nav class="navbar navbar-default lightHeader navbar-dashboard" role="navigation">
+          <div class="container">
+      
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-dash">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+      
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-dash">
+              <ul class="nav navbar-nav mr0">
+                <li class="active">
+                  <a href="dashboard.html"><i class="fa fa-tachometer icon-dash" aria-hidden="true"></i> Dashboard</a>
+                </li>
+                <li class="dropdown singleDro ">
+                    <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-leaf icon-dash" aria-hidden="true"></i> Farm <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="add-farm.html">Add Farm</a></li>
+                      <li><a href="view-admin.html">View Admin</a></li>
+                      <li><a href="add-rating.html">Add rating</a></li>
+                      <li><a href="view-rating.html">View rating</a></li>
+                    </ul>
+                  </li>
+                <li class="dropdown singleDro ">
+                    <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-list-ul icon-dash" aria-hidden="true"></i> Products <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="add-listings.html">Add Product</a></li>
+                      <li><a href="view-listings.html">View Products</a></li>
+                      <li><a href="restock-listings.html">Restock Product</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown singleDro ">
+                    <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-paw icon-dash" aria-hidden="true"></i> Animals <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="add-animals.html">Add Animals</a></li>
+                      <li><a href="view-animals.html">View Animlas</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown singleDro ">
+                    <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-copy icon-dash" aria-hidden="true"></i> Animal Breed <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="add-breed.html">Add breed</a></li>
+                        <li><a href="view-breed.html">View breed</a></li>
+                      </ul>
+                </li>
+                <li class="dropdown singleDro ">
+                  <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user icon-dash" aria-hidden="true"></i> Animal Age <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="add-age.html">Add age</a></li>
+                      <li><a href="view-age.html">View age</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown singleDro ">
+                  <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user icon-dash" aria-hidden="true"></i> Admin <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="add-admin.html">Add Admin</a></li>
+                    <li><a href="view-admin.html">View Admin</a></li>
+                    <li><a href="add-rating.html">Add rating</a></li>
+                    <li><a href="view-rating.html">View rating</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="row adjustRow">
+                <div class="pull-right col-xs-12 col-sm-2 teee">
+                  <a href="login.html"><i class="fa fa-unlock-alt icon-dash" aria-hidden="true"></i> Logout</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </section>
+
+      <!-- Dashboard breadcrumb section -->
+      <div class="section dashboard-breadcrumb-section bg-dark">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12">
+                  <h2>Add Farm</h2>
+                  <ol class="breadcrumb">
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li class="active">Add Farm</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      <section class="clearfix bg-dark listingSection" id="listing-add-edit">
+            <div class="container">
+                <div class="row test">
+                    <div class="col-md-12">
+                        <form action="#" method="" class="listing__form">
+                            <div class="dashboardBoxBg mb30">
+                                <div class="profileIntro paraMargin">
+                                    <p class="text-danger">All fields are required.</p>
+                                    <div class="row">
+                                        <fieldset>
+                                            <div class="col-md-6">
+                                                <legend class="text-center">Farm Information</legend>
+                                                    <div class="form-group">
+                                                        <label for="farmName">Farm Name</label>
+                                                        <input type="text" class="form-control" id="farmName" name="farmName">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="estDate">Establishment Date</label>
+                                                        <input type="date" class="form-control" id="estDate" name="estDate">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="mobileNum">Mobile Number</label>
+                                                        <input type="text" class="form-control" id="mobileNum" name="mobileNum">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="officeNum">Office Number</label>
+                                                        <input type="text" class="form-control" id="officeNum" name="officeNum">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="logo">Logo</label>
+                                                        <input type="file" class="form-control" id="logo" name="logo">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <p><small class="text-success">Logo preview</small></p>
+                                                        <div class="img-preview1"></div>
+                                                    </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <legend class="text-center">Farm address</legend>
+                                                <div class="form-group">
+                                                    <label for="headOffice">Head Office</label>
+                                                    <input type="text" name="headOffice" id="headOffice" class="form-control">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="state">State</label>
+                                                    <div class="contactSelect">
+                                                        <select name="state" id="state" class="select-drop">
+                                                            <option value="1">Ogun</option>
+                                                            <option value="2">Lagos</option>
+                                                            <option value="3">Ekiti</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="city" style="margin-top: 29px;">City</label>
+                                                    <div class="contactSelect">
+                                                        <select name="city" id="city" class="select-drop">
+                                                            <option value="1">Abeokuta</option>
+                                                            <option value="2">Ijebu Ode</option>
+                                                            <option value="3">Isheri</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="address" style="margin-top: 29px;">Address</label>
+                                                    <input type="text" class="form-control" id="address" name="address">
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="form-group">
+                                                        <label for="">Title Picture</label>
+                                                        <div class="picture">
+                                                            <span class="icon"><i class="fa fa-camera fa-mx"></i></span>
+                                                            <input type="file" name="pic1" id="pic" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="form-group">
+                                                        <label for="">Other Picture</label>
+                                                        <div class="picture">
+                                                            <span class="icon"><i class="fa fa-camera fa-mx"></i></span>
+                                                                <input type="file" name="pic2" id="pic" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="form-group">
+                                                        <label for="">Other Picture</label>
+                                                        <div class="picture">
+                                                            <span class="icon"><i class="fa fa-camera fa-mx"></i></span>
+                                                            <input type="file" name="pic3" id="pic" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="form-group">
+                                                        <label for="">Other Picture</label>
+                                                        <div class="picture">
+                                                            <span class="icon"><i class="fa fa-camera fa-mx"></i></span>
+                                                            <input type="file" name="pic4" id="pic" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-md-offset-3">
+                                                <legend class="text-center">
+                                                    Branch(es)
+                                                </legend>
+                                                <div class="form-group">
+                                                    <label for="addressBranch">Address</label>
+                                                    <input type="text" class="form-control" id="addressBranch" name="addressBranch">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="state">State</label>
+                                                    <div class="contactSelect">
+                                                        <select name="stateBranch" id="stateBranch" class="select-drop">
+                                                            <option value="1">Ogun</option>
+                                                            <option value="2">Lagos</option>
+                                                            <option value="3">Ekiti</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="city" style="margin-top: 29px;">City</label>
+                                                    <div class="contactSelect">
+                                                        <select name="cityBranch" id="cityBranch" class="select-drop">
+                                                            <option value="1">Abeokuta</option>
+                                                            <option value="2">Ijebu Ode</option>
+                                                            <option value="3">Isheri</option>
+                                                        </select>
+                                                        </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="postalCode" style="margin-top: 29px;">Postal Code</label>
+                                                    <input type="number" name="postalCode" id="postalCode" class="form-control">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="officeNumBranch">Office Number</label>
+                                                    <input type="text" class="form-control" id="officeNumBranch" name="officeNumBranch">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="email">Email</label>
+                                                    <input type="text" class="form-control" id="email" name="email">
+                                                </div>
+                                                <div class="more-field"></div>
+                                                <button type="button" class="btn btn-remove" id="add-more"><i class="fa fa-plus"></i></button>
+                                            </div>
+                                        </fieldset>
+                                        <div class="form-group text-center">
+                                            <button type="submit" class="btn btn-submit">Submit</button>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+</body>
+
+<script src="assets/plugins/jquery/jquery.min.js"></script>
+  <script src="assets/plugins/jquery-ui/jquery-ui.min.js"></script>
+  <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/plugins/smoothscroll/SmoothScroll.min.js"></script>
+  <script src="assets/plugins/selectbox/jquery.selectbox-0.1.3.min.js"></script>
+  <script src="assets/plugins/owl-carousel/owl.carousel.min.js"></script>
+<script src="assets/js/app.js"></script>
+
+<script>
+    let form = document.querySelector('.more-field');
+    let addBtn = document.querySelector('#add-more');
+    let maxField = 5;
+
+    const extraField = '<div class="removeBranch"><button type="button" class="text-danger removeBtn btn btn-remove" id="test"><i class="fa fa-trash"></i></button><div class="form-group"><label for="addressBranch">Address</label><input type="text" class="form-control" id="addressBranch" name="addressBranch"></div><div class="form-group"><label for="state">State</label><div class="contactSelect"><select name="stateBranch" id="stateBranch" class="select-drop form-control"><option value="1">Ogun</option><option value="2">Lagos</option><option value="3">Ekiti</option></select></div></div><div class="form-group"><label for="city" style="margin-top: 29px;">City</label><div class="contactSelect"><select name="cityBranch" id="cityBranch" class="select-drop form-control"><option value="1">Abeokuta</option><option value="2">Ijebu Ode</option><option value="3">Isheri</option></select></div></div><div class="form-group"><label for="postalCode" style="margin-top: 29px;">Postal Code</label>  <input type="number" name="postalCode" id="postalCode" class="form-control"></div><div class="form-group"><label for="officeNumBranch">Office Number</label><input type="text" class="form-control" id="officeNumBranch" name="officeNumBranch"></div><div class="form-group"><label for="email">Email</label><input type="text" class="form-control" id="email" name="email"></div></div>';
+    let increment = 1;
+    addBtn.addEventListener('click', e => {
+        if(increment < maxField){
+            increment++;
+            $(form).append(extraField);
+        } else {
+            alert("Cannot add more")
+        }
+    })
+
+    document.querySelector('.test').addEventListener('click', e => {
+        if(e.target.parentElement.classList.contains('removeBtn')){
+            e.target.parentElement.parentElement.remove()
+            increment--;
+        }
+    })
+</script>

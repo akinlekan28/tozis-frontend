@@ -128,6 +128,11 @@ h5 {
   height: 250px;
   border: 2px dotted #12bf13;
 }
+.img-preview1 {
+  height: 140px;
+  border: 2px dotted #12bf13;
+  width: 30%;
+}
 .img-preview-modal {
   height: 200px;
   border: 2px dotted #12bf13;
@@ -3233,6 +3238,15 @@ a.link:hover {
   padding-bottom: 20px !important;
   padding-top: 8px !important;
 }
+.btn-remove:focus{
+  color: #12bf13;
+  background-color: #ffffff;
+  border: 1px solid #12bf13;
+  height: 10px;
+  width: 5% !important;
+  padding-bottom: 20px !important;
+  padding-top: 8px !important;
+}
 @media (min-width: 768px) {
   .navbar-default.navbar-dashboard .navbar-nav > li:first-child a {
     padding-left: 10px;
@@ -3705,7 +3719,7 @@ footer {
 @media (min-width: 768px) {
   .banerInfo .btn-primary {
     width: auto;
-    margin-top: 15px;
+    margin-top: 20px;
   }
 }
 .banerInfo .btn-primary i {
@@ -8755,4 +8769,48 @@ body.rtl .page-error-section .addon-form-style .form-group .btn-default {
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
+}
+
+/* File upload style */
+.picture{
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border: 2px dotted #12bf13;
+  color: #FFFFFF;
+  margin: 5px auto;
+  overflow: hidden;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.picture > .icon{
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  color: #37474F;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.picture input[type="file"]{
+  cursor: pointer;
+  display: block;
+  height: 100%;
+  left: 0;
+  opacity: 0 !important;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  right: 0;
+  bottom: 0;
+}
+.fa-mx{
+  font-size: 3em;
+  margin-left: 25px;
+  margin-top: 27px;
+  color: #12bf13;
 }
