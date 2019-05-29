@@ -45,6 +45,14 @@ p {
     line-height: 26px;
     margin-bottom: 25px;
   }
+
+  .homeBanner {
+    min-height: 300px !important;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
 }
 h1,
 h2,
@@ -152,6 +160,7 @@ h5 {
 .explore-btn{
   color: #10ab11 !important;
   border: 1px solid #10ab11 !important;
+  width: 50%;
 }
 .explore-btn:hover {
   color: #ffffff !important;
@@ -221,6 +230,17 @@ h5 {
   .container {
     width: 750px;
   }
+  .box-fix{
+    margin-left: -18px;
+  }
+  .home-search{
+    margin-left: -18px;
+  }
+}
+@media (min-width: 767px){
+  .explore-btn{
+    width: 20%;
+  }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .md-screen {
@@ -239,6 +259,14 @@ h5 {
   .large-screen {
     margin-top: 20px;
     margin-left: 20%;
+  }
+}
+@media (min-width: 1439px){
+  .box-fix{
+    margin-left: -67px;
+  }
+  .home-search{
+    margin-left: -97px;
   }
 }
 a {
@@ -3684,7 +3712,6 @@ footer {
   border-top-color: #e5e5e5;
 }
 .homeBanner {
-  min-height: 624px;
   position: relative;
   background-repeat: no-repeat;
   background-position: center center;
@@ -3697,7 +3724,7 @@ footer {
 }
 @media (min-width: 768px) {
   .banerInfo {
-    padding-top: 160px;
+    padding-top: 5px;
   }
 }
 .banerInfo h1 {
@@ -3753,14 +3780,14 @@ footer {
 }
 @media (min-width: 768px) {
   .banerInfo .form-group {
-    width: 33%;
+    width: 38%;
     margin: 0 10px 0 0;
     margin-top: 20px;
   }
 }
 @media (min-width: 992px) {
   .banerInfo .form-group {
-    width: 19%;
+    width: 29%;
   }
 }
 /* .banerInfo .input-group {
@@ -8813,4 +8840,9 @@ body.rtl .page-error-section .addon-form-style .form-group .btn-default {
   margin-left: 25px;
   margin-top: 27px;
   color: #12bf13;
+}
+
+.farm-rule{
+  color: #12bf13 !important;
+  border: 1px dotted #12bf13;
 }

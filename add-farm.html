@@ -162,6 +162,10 @@
                                                         <input type="text" class="form-control" id="officeNum" name="officeNum">
                                                     </div>
                                                     <div class="form-group">
+                                                        <label for="email">Email</label>
+                                                        <input type="email" name="email" id="email" class="form-control">
+                                                    </div>
+                                                    <div class="form-group">
                                                         <label for="logo">Logo</label>
                                                         <input type="file" class="form-control" id="logo" name="logo">
                                                     </div>
@@ -172,10 +176,6 @@
                                             </div>
                                             <div class="col-md-6">
                                                 <legend class="text-center">Farm address</legend>
-                                                <div class="form-group">
-                                                    <label for="headOffice">Head Office</label>
-                                                    <input type="text" name="headOffice" id="headOffice" class="form-control">
-                                                </div>
                                                 <div class="form-group">
                                                     <label for="state">State</label>
                                                     <div class="contactSelect">
@@ -308,11 +308,11 @@
     let addBtn = document.querySelector('#add-more');
     let maxField = 5;
 
-    const extraField = '<div class="removeBranch"><button type="button" class="text-danger removeBtn btn btn-remove" id="test"><i class="fa fa-trash"></i></button><div class="form-group"><label for="addressBranch">Address</label><input type="text" class="form-control" id="addressBranch" name="addressBranch"></div><div class="form-group"><label for="state">State</label><div class="contactSelect"><select name="stateBranch" id="stateBranch" class="select-drop form-control"><option value="1">Ogun</option><option value="2">Lagos</option><option value="3">Ekiti</option></select></div></div><div class="form-group"><label for="city" style="margin-top: 29px;">City</label><div class="contactSelect"><select name="cityBranch" id="cityBranch" class="select-drop form-control"><option value="1">Abeokuta</option><option value="2">Ijebu Ode</option><option value="3">Isheri</option></select></div></div><div class="form-group"><label for="postalCode" style="margin-top: 29px;">Postal Code</label>  <input type="number" name="postalCode" id="postalCode" class="form-control"></div><div class="form-group"><label for="officeNumBranch">Office Number</label><input type="text" class="form-control" id="officeNumBranch" name="officeNumBranch"></div><div class="form-group"><label for="email">Email</label><input type="text" class="form-control" id="email" name="email"></div></div>';
     let increment = 1;
     addBtn.addEventListener('click', e => {
         if(increment < maxField){
             increment++;
+            const extraField = `<div class="removeBranch"><br><h4 class="text-center base-color"><strong>Branch ${increment}</strong></h4><hr class="farm-rule"><button type="button" class="text-danger removeBtn btn btn-remove" id="test"><i class="fa fa-trash"></i></button><br><br><div class="form-group"><label for="addressBranch">Address</label><input type="text" class="form-control" id="addressBranch" name="addressBranch"></div><div class="form-group"><label for="state">State</label><div class="contactSelect"><select name="stateBranch" id="stateBranch" class="select-drop form-control"><option value="1">Ogun</option><option value="2">Lagos</option><option value="3">Ekiti</option></select></div></div><div class="form-group"><label for="city">City</label><div class="contactSelect"><select name="cityBranch" id="cityBranch" class="select-drop form-control"><option value="1">Abeokuta</option><option value="2">Ijebu Ode</option><option value="3">Isheri</option></select></div></div><div class="form-group"><label for="postalCode">Postal Code</label>  <input type="number" name="postalCode" id="postalCode" class="form-control"></div><div class="form-group"><label for="officeNumBranch">Office Number</label><input type="text" class="form-control" id="officeNumBranch" name="officeNumBranch"></div><div class="form-group"><label for="email">Email</label><input type="text" class="form-control" id="email" name="email"></div></div>`;
             $(form).append(extraField);
         } else {
             alert("Cannot add more")

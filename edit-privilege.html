@@ -8,19 +8,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tozis Int. | Dashboard</title>
+  <title>Tozis Int. | Edit Privileges</title>
 
 <!-- PLUGINS CSS STYLE -->
 <link href="assets/plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet">
 <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 <link href="assets/plugins/bootstrapthumbnail/bootstrap-thumbnail.css" rel="stylesheet">
-<link href="assets/plugins/owl-carousel/owl.carousel.min.css" rel="stylesheet">
 <link href="assets/plugins/selectbox/select_option1.css" rel="stylesheet">
 <link href="assets/plugins/animate/animate.css" rel="stylesheet">
-<link href="#" rel="stylesheet" id="bootstrap-rtl">
-
-
+    
   <!-- GOOGLE FONT -->
   <link href="https://fonts.googleapis.com/css?family=Muli:200,300,400,600,700,800,900" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
@@ -33,7 +30,7 @@
   <link rel="stylesheet" href="assets/css/default.css" id="option_color">
 
   <!-- FAVICON -->
-  <link href="assets/img/favico.jpg" rel="shortcut icon">    
+  <link href="assets/img/favico.jpg" rel="shortcut icon">   
 </head>
 
 <body id="body" class="body-wrapper boxed-menu" >
@@ -121,70 +118,92 @@
         </nav>
       </section>
       
-      <!-- Dashboard breadcrumb section -->
-      <div class="section dashboard-breadcrumb-section bg-dark">
+    <!-- Dashboard breadcrumb section -->
+    <div class="section dashboard-breadcrumb-section bg-dark">
         <div class="container">
           <div class="row">
             <div class="col-xs-12">
-              <h2>Dashboard</h2>
+              <h2>Edit Privileges</h2>
               <ol class="breadcrumb">
-                <li><a href="index-2.html">Home</a></li>
-                <li class="active">Dashboard</li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li class="active">Edit Privileges</li>
               </ol>
             </div>
           </div>
         </div>
+        <br>
       </div>
     </div>
 
-    <section class="clearfix bg-dark equalHeight dashboardSection">
-        <div class="container">
-
-            <div class="row">
-              <div class="col-sm-3 col-xs-12">
-                  <div class="panel panel-default panel-card">
-                    <div class="panel-heading">
-                      Farms
-                    </div>
-                    <div class="panel-body">
-                      <h2>92</h2>
-                    </div>
-                  </div>
-            </div>
-            <div class="col-sm-3 col-xs-12">
-              <div class="panel panel-default panel-card">
-                <div class="panel-heading">
-                  Listings
-                </div>
-                <div class="panel-body">
-                  <h2>71,503</h2>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3 col-xs-12">
-              <div class="panel panel-default panel-card">
-                <div class="panel-heading">
-                  Animals
-                </div>
-                <div class="panel-body">
-                  <h2>5,00,103</h2>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3 col-xs-12">
-              <div class="panel panel-default panel-card">
-                <div class="panel-heading">
-                  Animal Breeds
-                </div>
-                <div class="panel-body">
-                  <h2>31,200</h2>
-                </div>
-              </div>
+    <div class="col-xs-12">
+      <form action="">
+        <div class="table-responsive bgAdd">
+            <table id="ordersTable" class="table table-small-font table-bordered table-striped" cellspacing="0" width="100%">
+              <thead>
+                <tr>
+                  <th class="text-center">Assign Roles</th>
+                  <th class="text-center">Account Officer</th>
+                  <th class="text-center">Admin</th>
+                  <th class="text-center">Super Admin</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Verify farms</td>
+                  <td class="text-center"><input type="checkbox" name="" id=""></td>
+                  <td class="text-center"><input type="checkbox" name="" id=""></td>
+                  <td class="text-center"><input type="checkbox" name="" id=""></td>
+                </tr>
+                <tr>
+                    <td>Edit About us</td>
+                    <td class="text-center"><input type="checkbox" name="" id=""></td>
+                    <td class="text-center"><input type="checkbox" name="" id=""></td>
+                    <td class="text-center"><input type="checkbox" name="" id=""></td>
+                </tr>
+                <tr>
+                    <td>Delete Farm</td>
+                    <td class="text-center"><input type="checkbox" name="" id=""></td>
+                    <td class="text-center"><input type="checkbox" name="" id=""></td>
+                    <td class="text-center"><input type="checkbox" name="" id=""></td>
+                </tr>
+                <tr>
+                    <td>Edit Receipts</td>
+                    <td class="text-center"><input type="checkbox" name="" id=""></td>
+                    <td class="text-center"><input type="checkbox" name="" id=""></td>
+                    <td class="text-center"><input type="checkbox" name="" id=""></td>
+                </tr>
+                <tr>
+                    <td>Edit Order Ratings</td>
+                    <td class="text-center"><input type="checkbox" name="" id=""></td>
+                    <td class="text-center"><input type="checkbox" name="" id=""></td>
+                    <td class="text-center"><input type="checkbox" name="" id=""></td>
+                </tr>
+                <tr>
+                    <td>Animals</td>
+                    <td class="text-center"><input type="checkbox" name="" id=""></td>
+                    <td class="text-center"><input type="checkbox" name="" id=""></td>
+                    <td class="text-center"><input type="checkbox" name="" id=""></td>
+                </tr>
+    
+              </tbody>
+            </table>
+          </div>
+          <div class="form-group col-xs-4">
+            <label for="user">Select User</label>
+            <div class="contactSelect">
+                <select name="user" id="user" class="select-drop">
+                    <option value="1">Adekunle Oseni</option>
+                    <option value="2">Stephen Blakefield</option>
+                    <option value="3">Round Robin</option>
+                </select>
             </div>
           </div>
+          <div class="form-group col-xs-4" style="margin-top: 29px;">
+              <input type="submit" class="btn btn-primary">
+          </div>
+      </form>
+    </div>
 
-        </div>
-      </section>
 </body>
 
 <script src="assets/plugins/jquery/jquery.min.js"></script>
@@ -192,5 +211,4 @@
   <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
   <script src="assets/plugins/smoothscroll/SmoothScroll.min.js"></script>
   <script src="assets/plugins/selectbox/jquery.selectbox-0.1.3.min.js"></script>
-  <script src="assets/plugins/owl-carousel/owl.carousel.min.js"></script>
 <script src="assets/js/app.js"></script>

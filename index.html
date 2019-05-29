@@ -87,21 +87,23 @@
 		<div class="row">
 			<div class="col-md-12">
 				<div class="banerInfo">
-					<h1>Explore. Discover. Share</h1>
+					<h1></h1>
 					<p>Tozis international helps to find out livestocks around you</p>
 					<form class="form-inline" action="">
-						<div class="form-group">
-							<div class="input-group">
-								<div class="input-group-addon">Location</div>
-								<input type="text" class="form-control" id="location" name="location">
-							</div>
-						</div>
-						<div class="form-group">
-							<div class="input-group">
-								<div class="input-group-addon">Search term</div>
-								<input type="text" class="form-control" id="term" name="term">
-							</div>
-						</div>
+							<div class="form-group">
+									<div class="input-group">
+										<div class="input-group-addon">Find</div>
+										<input type="text" class="form-control" id="findItem" placeholder="What are you looking for?">
+										<!-- <div class="input-group-addon addon-right"></div> -->
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="input-group home-search">
+										<div class="input-group-addon">Near</div>
+										<input type="text" class="form-control" id="nearLocation" placeholder="Location">
+										<div class="input-group-addon addon-right"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+									</div>
+								</div>
 							<div class="input-group box-fix">
 								<button type="submit" class="btn btn-primary">Search <i class="fa fa-search" aria-hidden="true"></i></button>
 							</div>
@@ -193,12 +195,112 @@
 	
 				<div class="col-xs-12">
 					<div class="btnArea btnAreaBorder text-center">
-						<a href="/listing.html" class="btn btn-primary explore-btn">View More</a>
+						<a href="/listing.html" class="btn explore-btn">View More</a>
 					</div>
 				</div>
 			</div>
 		</div>
-	</section>
+</section>
+
+<!--FEATURE SECTION-->
+<section class="clearfix thingsArea">
+		<div class="container">
+			<div class="page-header text-center">
+				<h2>Feature list</h2>
+			</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<div id="thubmnailSlider" class="carousel slide thumbnailCarousel">
+	
+						<ol class="carousel-indicators">
+							<li data-target="#thubmnailSlider" data-slide-to="0" class="active"></li>
+							<li data-target="#thubmnailSlider" data-slide-to="1"></li>
+							<li data-target="#thubmnailSlider" data-slide-to="2"></li>
+							<li data-target="#thubmnailSlider" data-slide-to="3"></li>
+						</ol>
+	
+						<!-- Carousel items -->
+						<div class="carousel-inner">
+							<div class="item row active">
+								<div class="col-md-4 col-sm-6 col-xs-12">
+									<div class="thingsBox">
+										<div class="thingsImage">
+											<a href="#">
+												<img src="assets/img/blade.jpg" alt="Image things">
+												<div class="thingsMask">
+													<h2>Pig </h2>
+													<p>Total: 30</p>
+													<p>Breeds: Local, exotic</p>
+													<p>Listed in 30 cities</p>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+	
+							<div class="item row">
+								<div class="col-md-4 col-sm-6 col-xs-12">
+									<div class="thingsBox">
+										<div class="thingsImage">
+											<a href="#">
+												<img src="assets/img/blade.jpg" alt="Image things">
+												<div class="thingsMask">
+													<h2>Goat </h2>
+													<p>Total: 13</p>
+													<p>Breeds: Red Bororo, Southern Sokoto</p>
+													<p>Listed in 8 cities</p>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+	
+							<div class="item row">
+								<div class="col-md-4 col-sm-6 col-xs-12">
+									<div class="thingsBox">
+										<div class="thingsImage">
+											<a href="#">
+											<img src="assets/img/blade.jpg" alt="Image things">
+											<div class="thingsMask">
+												<h2>Rabit </h2>
+												<p>Total: 6</p>
+												<p>Breeds: Local, Albino</p>
+												<p>Listed in 1 city</p>
+											</div>
+										</a>
+									</div>
+							</div>
+						</div>
+					</div>
+	
+							<div class="item row">
+								<div class="col-md-4 col-sm-6 col-xs-12">
+										<div class="thingsBox">
+											<div class="thingsImage">
+												<a href="#">
+													<img src="assets/img/blade.jpg" alt="Image things">
+													<div class="thingsMask">
+														<h2>Pig </h2>
+														<p>Total: 30</p>
+														<p>Breeds: Local, exotic</p>
+														<p>Listed in 30 cities</p>
+													</div>
+												</a>
+											</div>
+										</div>
+									</div>
+							</div>
+
+						</div>
+						<a class="left carousel-control" href="#thubmnailSlider" data-slide="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+						<a class="right carousel-control" href="#thubmnailSlider" data-slide="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+</section>
 
 
 <!-- WORKS SECTION -->
@@ -238,7 +340,7 @@
 		</div>
 		<div class="row">
 			<div class="col-xs-12">
-				<div class="btnArea text-center"><a href="#" class="btn btn-primary">Watch it now <i class="fa fa-play-circle" aria-hidden="true"></i></a></div>
+				<div class="btnArea text-center"><a href="#" class="btn explore-btn">Watch it now <i class="fa fa-play-circle" aria-hidden="true"></i></a></div>
 			</div>
 		</div>
 	</div>
