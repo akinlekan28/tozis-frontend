@@ -8846,3 +8846,7 @@ body.rtl .page-error-section .addon-form-style .form-group .btn-default {
   color: #12bf13 !important;
   border: 1px dotted #12bf13;
 }
+.receipt-img img{
+  height: 300px;
+  width: 100%;
+}

@@ -8,7 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tozis Int. | Add animal breed</title>
+  <title>Tozis Int. | View Orders</title>
 
 <!-- PLUGINS CSS STYLE -->
 <link href="assets/plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet">
@@ -18,6 +18,7 @@
 <link href="assets/plugins/owl-carousel/owl.carousel.min.css" rel="stylesheet">
 <link href="assets/plugins/selectbox/select_option1.css" rel="stylesheet">
 <link href="assets/plugins/animate/animate.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
 <link href="#" rel="stylesheet" id="bootstrap-rtl">
 
 
@@ -38,7 +39,7 @@
 
 <body id="body" class="body-wrapper boxed-menu" >
     <div class="main-wrapper">
-    <!-- Dashboard header -->
+            <!-- Dashboard header -->
     <section class="navbar-dashboard-area">
       <nav class="navbar navbar-default lightHeader navbar-dashboard" role="navigation">
         <div class="container">
@@ -115,65 +116,99 @@
                 </div>
               </div>
           </div>
-              </div>
-            </nav>
-          </section>
+        </div>
+      </nav>
+    </section>
       
       <!-- Dashboard breadcrumb section -->
       <div class="section dashboard-breadcrumb-section bg-dark">
         <div class="container">
           <div class="row">
             <div class="col-xs-12">
-              <h2>Add Breed</h2>
+              <h2>View Orders</h2>
               <ol class="breadcrumb">
                 <li><a href="dashboard.html">Dashboard</a></li>
-                <li class="active">Add Breed</li>
+                <li class="active">View Orders</li>
               </ol>
             </div>
           </div>
         </div>
+        <br>
       </div>
     </div>
-
-    <section class="clearfix bg-dark listingSection" id="listing-add-edit">
-        <div class="container">
-            <div class="row ">
-                <div class="col-xs-6 col-xs-offset-3 form-root">
-                    <form action="#" method="" class="listing__form">
-                        <div class="dashboardBoxBg mb30">
-                            <div class="profileIntro paraMargin">
-                                <p class="text-danger">All fields are required.</p>
-                                <div class="row test">
-                                    <div class="form-group col-xs-12">
-                                        <label for="animal">Animal</label>
-                                            <div class="contactSelect">
-                                                <select name="animal" id="guiest_id9" class="select-drop">
-                                                    <option value="1">Goat</option>
-                                                    <option value="2">Cow</option>
-                                                    <option value="3">Rabbit</option>
-                                                </select>
-                                            </div>
-                                    </div>
-                                    <div class="form-group col-xs-12">
-                                        <label for="breed">Breed</label>
-                                        <input type="text" class="form-control" id="breed" name="breed">   
-                                    </div>
-                                    <div class="more-field"></div>
-                                    <div class="form-group col-xs-12">
-                                        <button type="button" class="btn btn-primary btn-md" id="add-more">Add More</button>
-                                    </div>
-                                    <div class="form-group text-center">
-                                        <button type="submit" class="btn-submit">Submit</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
+    <div class="col-xs-12">
+      <div class="table-responsive bgAdd">
+        <table id="ordersTable" class="table table-small-font table-bordered table-striped" cellspacing="0" width="100%">
+          <thead>
+            <tr>
+              <th>#SN</th>
+              <th>Farm Code</th>
+              <th>Product Information</th>
+              <th>Ordered By</th>
+              <th>Quanity</th>
+              <th>Price</th>
+              <th>Delivery Address</th>
+              <th>Date Added</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>19746679</td>
+              <td>Sample Product</td>
+              <td>Simon Moses</td>
+              <td>30</td>
+              <td>23,500</td>
+              <td>16, Awolowo road Ikeja Lagos</td>
+              <td>12/12/2017</td>
+              <td>
+                <div class="btn-group">
+                  <a href="add-orders.html" class="btn btn-primary">Edit</a>
+                  <button type="button" class="btn btn-primary"><i class="fa fa-trash text-danger"></i></button>
                 </div>
-            </div>
-        </div>
-    </section>
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
 </body>
+
+<!--Confirm Delete Modal-->
+<div class="modal fade" id="deleteModal" role="dialog">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title text-center text-danger">Delete <i class="fa fa-trash"></i></h4>
+        </div>
+        <div class="modal-body">
+          <p class="text-center"><i class="fa fa-bullhorn fa-lg"></i> &nbsp;Are you sure you want to delete ?</p>
+          <div class="form-group text-center">
+            <button type="button" class="btn btn-danger delete-btn" data-toggle="modal" data-target="#deletedModal" name="submit">Delete <i class="fa fa-exclamation"></i></button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancle <i class="fa fa-ban"></i></button>
+          </div>
+        </div>
+      </div>
+  </div>
+  
+  <!--Deleted Modal-->
+  <div class="modal fade" id="deletedModal" role="dialog">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Record Deleted</h4>
+        </div>
+        <div class="modal-body">
+          <div class="text-center">
+            <button type="button" class="btn btn-primary btn-lg" data-dismiss="modal">Dismiss</button>
+          </div>
+        </div>
+      </div>
+  </div>
 
 <script src="assets/plugins/jquery/jquery.min.js"></script>
   <script src="assets/plugins/jquery-ui/jquery-ui.min.js"></script>
@@ -181,37 +216,11 @@
   <script src="assets/plugins/smoothscroll/SmoothScroll.min.js"></script>
   <script src="assets/plugins/selectbox/jquery.selectbox-0.1.3.min.js"></script>
   <script src="assets/plugins/owl-carousel/owl.carousel.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
 <script src="assets/js/app.js"></script>
 
 <script>
-    let form = document.querySelector('.more-field');
-    let addBtn = document.querySelector('#add-more');
-    let maxField = 10;
-    const extraField = '<div class="form-group col-xs-12"><label for="breed">Breed</label><input type="text" class="form-control" id="breed" name="breed"><button type="button" class="text-danger removeBtn btn btn-remove">X</button></div>';
-    let increment = 1;
-    addBtn.addEventListener('click', e => {
-        if(increment < maxField){
-            increment++;
-            $(form).append(extraField);
-        } else {
-            const container = document.querySelector('.form-root');
-            const form = document.querySelector('.listing__form');
-            const errorDiv = document.createElement('div');
-
-            errorDiv.className = 'alert text-danger';     
-            errorDiv.appendChild(document.createTextNode("Maximum number of fields reached"));
-            container.insertBefore(errorDiv, form);
-
-            setTimeout(() => {
-            document.querySelector('.alert').remove();
-            }, 5000);
-        }
-    })
-
-    document.querySelector('.test').addEventListener('click', e => {
-        if(e.target.classList.contains('removeBtn')){
-            e.target.parentElement.remove();
-            increment--;
-        }
-    })
+  $(document).ready(function() {
+    $('#ordersTable').DataTable();
+} );
 </script>
