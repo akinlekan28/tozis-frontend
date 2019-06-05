@@ -8901,3 +8901,12 @@ body.rtl .page-error-section .addon-form-style .form-group .btn-default {
   padding: 5px;
   text-align: center;
 }
+.mb-7{
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px){
+  .mb-7{
+    margin-bottom: 50px;
+  }
+}
