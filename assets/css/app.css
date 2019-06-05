@@ -126,6 +126,12 @@ h5 {
 .mt-3 {
   margin-top: 12px;
 }
+.mt-5 {
+  margin-top: 15px
+}
+.mt-7 {
+  margin-top: 30px;
+}
 .in-stock {
   background-color: #324a5e;
 }
@@ -231,11 +237,11 @@ h5 {
     width: 750px;
   }
   .box-fix{
-    margin-left: -18px;
+    margin-left: -17.5px;
   }
-  .home-search{
+  /* .home-search{
     margin-left: -18px;
-  }
+  } */
 }
 @media (min-width: 767px){
   .explore-btn{
@@ -3513,6 +3519,18 @@ footer {
     margin-bottom: 25px;
   }
 }
+@media (max-width: 320px){
+  .mt30{
+    /* margin-top: -100rem; */
+    /* margin-bottom: 3rem; */
+  }
+  .over{
+    margin-top: -2rem;
+  }
+  .btn-outline{
+    width: 80%;
+  }
+}
 @media (max-width: 425px){
   .col-xs-offset-3 {
       margin-left: 0;
@@ -4097,7 +4115,8 @@ i.fa.fa-heart-o.active:before {
   }
 }
 .thingsBox:hover .thingsMask {
-  background-color: rgba(33, 150, 243, 0.5);
+  background-color: #78C071;
+  opacity: 0.8;
 }
 .thingsBox:hover .thingsMask h2 i {
   color: #fff;
@@ -6276,6 +6295,9 @@ figure:hover .overlay {
   padding: 30px;
 }
 .mt30 {
+  margin-top: 30px;
+}
+.cat-btn{
   margin-top: 30px;
 }
 .mb30 {
@@ -8710,6 +8732,15 @@ body.rtl .page-error-section .addon-form-style .form-group .btn-default {
     height: 100%;
   }
 }
+
+@media (min-width: 1024px) and (max-width: 1439px){
+  .btn-outline{
+    width: 70%;
+  }
+  .mt30{
+    margin-top: 14px;
+  }
+}
 #iw-container {
   padding-right: 20px;
 }
@@ -8849,4 +8880,24 @@ body.rtl .page-error-section .addon-form-style .form-group .btn-default {
 .receipt-img img{
   height: 300px;
   width: 100%;
+}
+
+.view-category {
+  display: none;
+}
+
+.view-category a:hover{
+  display: block;
+}
+
+.thingsBox:hover .thingsMask > div {
+  display: block;
+}
+
+.auto-complete {
+  background-color: #10ab11;
+  color: #ffffff;
+  border-radius: 4px 4px 4px 4px;
+  padding: 5px;
+  text-align: center;
 }

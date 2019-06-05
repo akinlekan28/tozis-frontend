@@ -87,114 +87,268 @@
 <section class="clearfix termsInfoSection">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12">
-                    <ul class="nav nav-tabs nav-justified">
-                        <li><a data-toggle="tab" href="#category"><i class="fa fa-list-alt" aria-hidden="true"></i> &nbsp;Category</a></li>
-                        <li><a data-toggle="tab" href="#filter"><i class="fa fa-filter" aria-hidden="true"></i> &nbsp;Filter</a></li>
-                      </ul>
-
-                      <div class="tab-content">
-                        <div id="category" class="tab-pane fade in active">
-                          <div class="class-button">
-                            <div class="col-md-4">
-                              <form action="" method="GET">
-                                <div class="form-group">
-                                  	<div class="searchSelectbox">
-                                        <select name="city" id="category" class="select-drop">
-                                          <option value="0">Select Category</option>
-                                          <option value="1">Category 1</option>
-                                          <option value="2">Category 2</option>
-                                          <option value="3">Category 3</option>
-                                        </select>
-                                      </div>
-                                </div>
-                              </form>
-                            </div>
-                            <!--GENERAL LISTING FOR CATEGORY FILTER-->
-                            <div class="row">
-                              <div class="col-md-12 listing-margin">
-                                  <div class="col-md-3 col-sm-6 col-xs-12">
-                                      <div class="thingsBox thinsSpace card">
-                                        <div class="thingsImage">
-                                          <img src="assets/img/3.jpeg" alt="Image things">
-                                          <div class="thingsMask">
-                                            <span class="badge in-stock">In Stock</span>
-                                          </div>
-                                        </div>
-                                        <div class="thingsCaption ">
-                                          <div>Chicken</div>
-                                          <div class="mt-3">Broiler</div>
-                                          <div class="mt-3">Grower</div>
-                                          <div class="mt-3"><i class="fa fa-map-marker" aria-hidden="true"></i> Abeokuta, Ogun State</div>
-                                          <div class="mt-3 card-money">&#8358; 50,000</div>
-                                        </div>
-                                      </div>
-                                    </div>
-
-                                    <div class="col-md-3 col-sm-6 col-xs-12">
-                                        <div class="thingsBox thinsSpace card">
-                                          <div class="thingsImage">
-                                            <img src="assets/img/3.jpeg" alt="Image things">
-                                            <div class="thingsMask">
-                                              <span class="badge in-stock">In Stock</span>
-                                            </div>
-                                          </div>
-                                          <div class="thingsCaption ">
-                                            <div>Chicken</div>
-                                            <div class="mt-3">Broiler</div>
-                                            <div class="mt-3">Grower</div>
-                                            <div class="mt-3"><i class="fa fa-map-marker" aria-hidden="true"></i> Abeokuta, Ogun State</div>
-                                            <div class="mt-3 card-money">&#8358; 50,000</div>
-                                          </div>
-                                        </div>
-                                      </div>
-
-                                      <div class="col-md-3 col-sm-6 col-xs-12">
-                                          <div class="thingsBox thinsSpace card">
-                                            <div class="thingsImage">
-                                              <img src="assets/img/3.jpeg" alt="Image things">
-                                              <div class="thingsMask">
-                                                <span class="badge in-stock">In Stock</span>
-                                              </div>
-                                            </div>
-                                            <div class="thingsCaption ">
-                                              <div>Chicken</div>
-                                              <div class="mt-3">Broiler</div>
-                                              <div class="mt-3">Grower</div>
-                                              <div class="mt-3"><i class="fa fa-map-marker" aria-hidden="true"></i> Abeokuta, Ogun State</div>
-                                              <div class="mt-3 card-money">&#8358; 50,000</div>
-                                            </div>
-                                          </div>
-                                        </div>
-
-                                        <div class="col-md-3 col-sm-6 col-xs-12">
-                                            <div class="thingsBox thinsSpace card">
-                                              <div class="thingsImage">
-                                                <img src="assets/img/3.jpeg" alt="Image things">
-                                                <div class="thingsMask">
-                                                  <span class="badge in-stock">In Stock</span>
-                                                </div>
-                                              </div>
-                                              <div class="thingsCaption ">
-                                                <div>Chicken</div>
-                                                <div class="mt-3">Broiler</div>
-                                                <div class="mt-3">Grower</div>
-                                                <div class="mt-3"><i class="fa fa-map-marker" aria-hidden="true"></i> Abeokuta, Ogun State</div>
-                                                <div class="mt-3 card-money">&#8358; 50,000</div>
-                                              </div>
-                                            </div>
-                                        </div>
-                              </div>
- 
-                            </div>
+                <div class="col-md-12">
+                  <div class="col-md-3">
+                    <div class="selected-filter text-center">
+                      <h4 class="base-color">Selected Filters</h4>
+                      <span><a href="" class="btn btn-sm btn-filter">Goat</a> <span class="remove-filter">X</span></span>
+                      <span><a href="" class="btn btn-sm btn-filter">Cow</a> <span class="remove-filter">X</span></span>
+                    </div>
+                    <div class="text-center mt-7">
+                      <form action="">
+                        <div class="form-group">
+                          <label for="state" class="base-color">Browse State</label>
+                          <input type="text" name="state" id="state" class="form-control" placeholder="Enter state">
+                        </div>
+                        <h4 class="base-color">Browse Cities</h4>
+                        <div class="form-group">
+                          <div>
+                            <input type="checkbox" name="cityName" id="city">
+                            <label for="city">Odeda (32)</label>
+                          </div>
+                          <div>
+                            <input type="checkbox" name="cityName" id="city">
+                            <label for="city">Sagamu (16)</label>
                           </div>
                         </div>
-
-                          <div id="filter" class="tab-pane fade">
-                            <h1>Lorem, ipsum dolor.</h1>
+                        <h4 class="base-color">Animal Breed</h4>
+                        <div class="form-group">
+                          <div>
+                            <input type="radio" name="exotic" id="exotic">
+                            <label for="exotic">Exotic Breed</label>
                           </div>
+                          <div>
+                            <input type="radio" name="local" id="local">
+                            <label for="local">Local Breed</label>
+                          </div>
+                        </div>
+                        <h4 class="base-color">Price Range</h4>
+                        <div class="slidecontainer">
+                          <input type="range" min="0" max="50000" value="0" class="slider" id="myRange">
+                          <p>Price: <span id="demo"></span></p>
+                        </div>
+                        <div class="form-group">
+                          <label for="min">Minimum Price</label>
+                          <input type="text" name="min" id="min" class="form-control" placeholder="Min. Price">
+                        </div>
+                        <div class="form-group">
+                          <label for="min">Maximum Price</label>
+                          <input type="text" name="max" id="max" class="form-control" placeholder="Max. Price">
+                        </div>
+                        <h4 class="base-color">Farm Rating</h4>
+                        <div class="form-group">
+                          <input type="checkbox" name="five" id="five"><i class="fa fa-star fa-2x pull-right gold"></i>&nbsp;<i class="fa fa-star fa-2x pull-right gold"></i>&nbsp;<i
+                            class="fa fa-star fa-2x pull-right gold"></i>&nbsp;<i class="fa fa-star fa-2x pull-right gold"></i>&nbsp;<i
+                            class="fa fa-star fa-2x pull-right gold"></i>
+                        </div>
+                        <div class="form-group">
+                          <input type="checkbox" name="four" id="four"><i class="fa fa-star fa-2x pull-right"></i>&nbsp;<i
+                            class="fa fa-star fa-2x pull-right gold"></i>&nbsp;<i class="fa fa-star fa-2x pull-right gold"></i>&nbsp;<i
+                            class="fa fa-star fa-2x pull-right gold"></i>&nbsp;<i class="fa fa-star fa-2x pull-right gold"></i>
+                        </div>
+                        <div class="form-group">
+                          <input type="checkbox" name="three" id="three"><i class="fa fa-star fa-2x pull-right"></i>&nbsp;<i
+                            class="fa fa-star fa-2x pull-right"></i>&nbsp;<i class="fa fa-star fa-2x pull-right gold"></i>&nbsp;<i
+                            class="fa fa-star fa-2x pull-right gold"></i>&nbsp;<i class="fa fa-star fa-2x pull-right gold"></i>
+                        </div>
+                        <div class="form-group">
+                          <input type="checkbox" name="two" id="two"><i class="fa fa-star fa-2x pull-right"></i>&nbsp;<i
+                            class="fa fa-star fa-2x pull-right"></i>&nbsp;<i class="fa fa-star fa-2x pull-right"></i>&nbsp;<i
+                            class="fa fa-star fa-2x pull-right gold"></i>&nbsp;<i class="fa fa-star fa-2x pull-right gold"></i>
+                        </div>
+                        <div class="form-group">
+                          <input type="checkbox" name="one" id="one"><i class="fa fa-star fa-2x pull-right"></i>&nbsp;<i
+                            class="fa fa-star fa-2x pull-right"></i>&nbsp;<i class="fa fa-star fa-2x pull-right"></i>&nbsp;<i
+                            class="fa fa-star fa-2x pull-right"></i>&nbsp;<i class="fa fa-star fa-2x pull-right gold"></i>
+                        </div>
+                        <div class="form-group">
+                          <input type="checkbox" name="zero" id="zero"> Not rated
+                        </div>
 
+                        <button type="submit" class="btn btn-primary">Filter</button>
+                      </form>
+                    </div>
+                  </div>
+                  <!--LISTING-->
+                  <div class="col-md-9">
+                    <div>
+                      <form class="form-inline">
+                        <div class="form-group">
+                          <label for="sort" class="base-color">Sort by</label>
+                            <select name="sort" class="base-color">
+                              <option value="1">Newest first</option>
+                              <option value="2">Oldest first</option>
+                              <option value="3">Higest price</option>
+                              <option value="3">Lowest price</option>
+                            </select>
+                        </div>
+                      </form>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                      <div class="thingsBox thinsSpace card">
+                        <div class="thingsImage">
+                          <img src="assets/img/3.jpeg" alt="Image things">
+                          <div class="thingsMask">
+                            <span class="badge in-stock">In Stock</span>
+                          </div>
+                        </div>
+                        <div class="thingsCaption ">
+                          <div>Chicken</div>
+                          <div class="mt-3">Broiler</div>
+                          <div class="mt-3">Grower</div>
+                          <div class="mt-3"><i class="fa fa-map-marker" aria-hidden="true"></i> Abeokuta, Ogun State</div>
+                          <div class="mt-3 card-money">&#8358; 50,000</div>
+                        </div>
                       </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                      <div class="thingsBox thinsSpace card">
+                        <div class="thingsImage">
+                          <img src="assets/img/3.jpeg" alt="Image things">
+                          <div class="thingsMask">
+                            <span class="badge sold-out">Sold Out</span>
+                          </div>
+                        </div>
+                        <div class="thingsCaption ">
+                          <div>Rabbit</div>
+                          <div class="mt-3">Albino Rabbit</div>
+                          <div class="mt-3">Weaner</div>
+                          <div class="mt-3"><i class="fa fa-map-marker" aria-hidden="true"></i> Ipetumodu, Osun State</div>
+                          <div class="mt-3 card-money">&#8358; 13,400</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                      <div class="thingsBox thinsSpace card">
+                        <div class="thingsImage">
+                          <img src="assets/img/3.jpeg" alt="Image things">
+                          <div class="thingsMask">
+                            <span class="badge sold-out">Sold Out</span>
+                          </div>
+                        </div>
+                        <div class="thingsCaption ">
+                          <div>Rabbit</div>
+                          <div class="mt-3">Albino Rabbit</div>
+                          <div class="mt-3">Weaner</div>
+                          <div class="mt-3"><i class="fa fa-map-marker" aria-hidden="true"></i> Ipetumodu, Osun State</div>
+                          <div class="mt-3 card-money">&#8358; 13,400</div>
+                        </div>
+                      </div>
+                    </div>
+
+                                        <div class="col-md-4 col-sm-6 col-xs-12">
+                      <div class="thingsBox thinsSpace card">
+                        <div class="thingsImage">
+                          <img src="assets/img/3.jpeg" alt="Image things">
+                          <div class="thingsMask">
+                            <span class="badge in-stock">In Stock</span>
+                          </div>
+                        </div>
+                        <div class="thingsCaption ">
+                          <div>Chicken</div>
+                          <div class="mt-3">Broiler</div>
+                          <div class="mt-3">Grower</div>
+                          <div class="mt-3"><i class="fa fa-map-marker" aria-hidden="true"></i> Abeokuta, Ogun State</div>
+                          <div class="mt-3 card-money">&#8358; 50,000</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                      <div class="thingsBox thinsSpace card">
+                        <div class="thingsImage">
+                          <img src="assets/img/3.jpeg" alt="Image things">
+                          <div class="thingsMask">
+                            <span class="badge sold-out">Sold Out</span>
+                          </div>
+                        </div>
+                        <div class="thingsCaption ">
+                          <div>Rabbit</div>
+                          <div class="mt-3">Albino Rabbit</div>
+                          <div class="mt-3">Weaner</div>
+                          <div class="mt-3"><i class="fa fa-map-marker" aria-hidden="true"></i> Ipetumodu, Osun State</div>
+                          <div class="mt-3 card-money">&#8358; 13,400</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                      <div class="thingsBox thinsSpace card">
+                        <div class="thingsImage">
+                          <img src="assets/img/3.jpeg" alt="Image things">
+                          <div class="thingsMask">
+                            <span class="badge sold-out">Sold Out</span>
+                          </div>
+                        </div>
+                        <div class="thingsCaption ">
+                          <div>Rabbit</div>
+                          <div class="mt-3">Albino Rabbit</div>
+                          <div class="mt-3">Weaner</div>
+                          <div class="mt-3"><i class="fa fa-map-marker" aria-hidden="true"></i> Ipetumodu, Osun State</div>
+                          <div class="mt-3 card-money">&#8358; 13,400</div>
+                        </div>
+                      </div>
+                    </div>
+
+                                        <div class="col-md-4 col-sm-6 col-xs-12">
+                      <div class="thingsBox thinsSpace card">
+                        <div class="thingsImage">
+                          <img src="assets/img/3.jpeg" alt="Image things">
+                          <div class="thingsMask">
+                            <span class="badge in-stock">In Stock</span>
+                          </div>
+                        </div>
+                        <div class="thingsCaption ">
+                          <div>Chicken</div>
+                          <div class="mt-3">Broiler</div>
+                          <div class="mt-3">Grower</div>
+                          <div class="mt-3"><i class="fa fa-map-marker" aria-hidden="true"></i> Abeokuta, Ogun State</div>
+                          <div class="mt-3 card-money">&#8358; 50,000</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                      <div class="thingsBox thinsSpace card">
+                        <div class="thingsImage">
+                          <img src="assets/img/3.jpeg" alt="Image things">
+                          <div class="thingsMask">
+                            <span class="badge sold-out">Sold Out</span>
+                          </div>
+                        </div>
+                        <div class="thingsCaption ">
+                          <div>Rabbit</div>
+                          <div class="mt-3">Albino Rabbit</div>
+                          <div class="mt-3">Weaner</div>
+                          <div class="mt-3"><i class="fa fa-map-marker" aria-hidden="true"></i> Ipetumodu, Osun State</div>
+                          <div class="mt-3 card-money">&#8358; 13,400</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                      <div class="thingsBox thinsSpace card">
+                        <div class="thingsImage">
+                          <img src="assets/img/3.jpeg" alt="Image things">
+                          <div class="thingsMask">
+                            <span class="badge sold-out">Sold Out</span>
+                          </div>
+                        </div>
+                        <div class="thingsCaption ">
+                          <div>Rabbit</div>
+                          <div class="mt-3">Albino Rabbit</div>
+                          <div class="mt-3">Weaner</div>
+                          <div class="mt-3"><i class="fa fa-map-marker" aria-hidden="true"></i> Ipetumodu, Osun State</div>
+                          <div class="mt-3 card-money">&#8358; 13,400</div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                  </div>
                 </div>
             </div>
         </div>
@@ -280,5 +434,20 @@
   <script src="assets/plugins/selectbox/jquery.selectbox-0.1.3.min.js"></script>
   <script src="assets/plugins/owl-carousel/owl.carousel.min.js"></script>
   <script src="assets/js/app.js"></script>
+
+  <script>
+     const formatMoney = money => {
+        let formatedValue = money.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
+        return formatedValue;
+      };
+
+    let slider = document.getElementById("myRange");
+    let output = document.getElementById("demo");
+      output.innerHTML = formatMoney(slider.value);
+
+      slider.oninput = function () {
+        output.innerHTML = formatMoney(this.value);
+      }
+  </script>
 
 </html>

@@ -108,7 +108,7 @@ jQuery(document).ready(function() {
             .appendTo($(this));
         }
       } else {
-        for (i = 1; i < 3; i++) {
+        for (i = 1; i < 4; i++) {
           itemToClone = itemToClone.next();
           if (!itemToClone.length) {
             itemToClone = $(this).siblings(":first");
