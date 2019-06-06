@@ -67,3 +67,15 @@ section {
 .gold{
     color: gold;
 }
+
+@media (max-width: 768px){
+  .filter-column{
+    display: none;
+  }
+}
+
+@media (min-width: 1024px){
+  .toggle-filter{
+    display: none
+  }
+}

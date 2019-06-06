@@ -347,11 +347,11 @@ footer {
   width: 100%;
 }
 section {
-  padding: 50px 0;
+  padding: 20px 0;
 }
 @media (min-width: 768px) {
   section {
-    padding: 100px 0;
+    padding: 20px 0;
   }
 }
 .thumbnail {
@@ -406,6 +406,11 @@ section {
 @media (min-width: 480px) {
   .boxed .main-wrapper {
     max-width: 520px;
+  }
+}
+@media(max-width: 425px){
+  .sm-sc{
+    margin-bottom: 15px;
   }
 }
 @media (min-width: 768px) {
@@ -1664,7 +1669,7 @@ a.link:hover {
 }
 @media (min-width: 768px) {
   .page-header {
-    margin: 0 0 60px;
+    margin: 0 0 30px;
   }
 }
 .page-header h2 {
