@@ -68,6 +68,13 @@ section {
     color: gold;
 }
 
+.search-result{
+  margin-top: 10px;
+  margin-bottom: 55px;
+  padding: 15px; 
+  box-shadow: 0px 5.12832px 26.9237px rgba(97, 97, 97, 0.233752);
+}
+
 @media (max-width: 768px){
   .filter-column{
     display: none;
