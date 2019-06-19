@@ -3981,7 +3981,7 @@ footer {
   }
 }
 .thingsArea .thumbnailCarousel {
-  padding-top: 95px;
+  padding-top: 30px;
 }
 .thingsArea .thumbnailCarousel .item.row {
   margin: 0;
@@ -4014,7 +4014,7 @@ footer {
   margin-right: -50px !important;
 }
 .thingsArea .carousel-inner {
-  min-height: 270px;
+  /* min-height: 200px; */
   z-index: 0;
 }
 .thingsArea .carousel-indicators {
@@ -8915,3 +8915,92 @@ body.rtl .page-error-section .addon-form-style .form-group .btn-default {
     margin-bottom: 50px;
   }
 }
+
+	.banner-form{
+		margin-left: 250px;
+	}
+	  form.example input[type=text] {
+		padding: 10px;
+		font-size: 17px;
+		border: 1px solid grey;
+		float: left;
+		width: 30%;
+		background: #f1f1f1;
+	}
+
+	form.example button {
+	float: left;
+	width: 18%;
+	padding: 13px;
+	background: #10ab11;
+	color: white;
+	font-size: 17px;
+	border: 1px solid grey;
+	border-left: none;
+	cursor: pointer;
+	}
+
+	form.example::after {
+	content: "";
+	clear: both;
+	display: table;
+	}
+
+	@media (max-width: 768px){
+		form.example button {
+			float: left;
+			width: 20%;
+			padding: 13px;
+			background: #10ab11;
+			color: white;
+			font-size: 17px;
+			border: 1px solid grey;
+			border-left: none;
+			cursor: pointer;
+		}
+
+		form.example input[type=text] {
+			padding: 10px;
+			font-size: 17px;
+			border: 1px solid grey;
+			float: left;
+			width: 30%;
+			background: #f1f1f1;
+		}
+
+		.banner-form{
+			margin-left: 95px;
+		}
+	}
+
+	@media (max-width: 425px){
+		form.example button {
+			float: left;
+			width: 25%;
+			padding: 13px;
+			background: #10ab11;
+			color: white;
+			font-size: 17px;
+			border: 1px solid grey;
+			border-left: none;
+			cursor: pointer;
+		}
+
+		form.example input[type=text] {
+			padding: 10px;
+			font-size: 17px;
+			border: 1px solid grey;
+			float: left;
+			width: 35%;
+			background: #f1f1f1;
+		}
+
+		.banner-form{
+			margin-left: 0px;
+			margin-top: -55px;
+		}
+
+		.control-indicator{
+			margin-top: 40px;
+		}
+	}
